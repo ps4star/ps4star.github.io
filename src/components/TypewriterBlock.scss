@@ -1,0 +1,26 @@
+.anim-typewriter{
+    animation: blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes blinkTextCursor{
+    from{background: rgba(255,255,255,1);}
+    to{background: transparent;}
+}
+
+.TypewriterBlock {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+
+    .line-l {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 2vmin;
+        white-space: pre-wrap;
+        overflow: hidden;
+        .anim-typewriter {
+            color: rgba(0, 0, 0, 0);
+        }
+    }
+}
